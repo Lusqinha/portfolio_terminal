@@ -1,15 +1,18 @@
-const help = [
-    "help            Display a list of available commands",
-    "whois           About me",
-    "whoami          About you",
-    "ping            (•-•)⌐",
-    "projects        Main projects",
-    "skills          Main skills",
-    "social          Social networks",
-    "career          Professional experience",
-    "education       Academic background",
-    "clear           Clear the terminal"
-]
+const help = `
+<p>
+    <span class="highlight">help</span> -------------- you know<br>
+    <span class="highlight">whois</span> ------------- About me<br>
+    <span class="highlight">whoami</span> ------------ About you<br>
+    <span class="highlight">ping</span> -------------- (•-•)⌐<br>
+    <span class="highlight">projects</span> ---------- Main projects<br>
+    <span class="highlight">skills</span> ------------ Main skills<br>
+    <span class="highlight">social</span> ------------ Social networks<br>
+    <span class="highlight">career</span> ------------ Professional experience<br>
+    <span class="highlight">education</span> --------- Academic background<br>
+    <span class="highlight">clear</span> ------------- Clear the terminal
+</p>
+`
+
 
 export const comm_en = {
     "help": help,
@@ -21,7 +24,6 @@ export const comm_en = {
     "social": "coming soon",
     "career": "coming soon",
     "education": "coming soon",
-    "clear": "clearing..."
 }
 
 export const error_en = "Command not found, type <span>help</span> for a list of commands";

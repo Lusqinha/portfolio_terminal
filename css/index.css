@@ -3,7 +3,6 @@
 body{
     background-color: black;
     background-image: url(../web/twinkling-stars.gif);
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +19,11 @@ main{
     padding: 1em;
     display: flex;
     flex-direction: column;
+}
+
+.highlight{
+    color: #ff00ff;
+    font-weight: bold;
 }
 
 .type{

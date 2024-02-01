@@ -1,15 +1,17 @@
-const ajuda = [
-    "help            Exibe uma lista de comandos disponíveis",
-    "whois           Sobre mim",
-    "whoami          Sobre você",
-    "ping            (•-•)⌐",
-    "projetos        Principais projetos",
-    "habilidades     Principais habilidades",
-    "social          Redes sociais",
-    "carreira        Experiência profissional",
-    "educação        Formação acadêmica",
-    "clear           Limpa o terminal"
-]
+const ajuda = `
+<p>
+    <span class="highlight">help</span> -------------- Exibe uma lista de comandos disponíveis<br>
+    <span class="highlight">whois</span> ------------- Sobre mim<br>
+    <span class="highlight">whoami</span> ------------ Sobre você<br>
+    <span class="highlight">ping</span> -------------- (•-•)⌐<br>
+    <span class="highlight">projetos</span> ---------- Principais projetos<br>
+    <span class="highlight">habilidades</span> ------- Principais habilidades<br>
+    <span class="highlight">social</span> ------------ Redes sociais<br>
+    <span class="highlight">carreira</span> ----------- Experiência profissional<br>
+    <span class="highlight">educação</span> ---------- Formação acadêmica<br>
+    <span class="highlight">clear</span> ------------- Limpa o terminal
+</p>
+`
 
 export const comm_ptbr = {
     "help": ajuda,

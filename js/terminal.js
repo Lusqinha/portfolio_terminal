@@ -6,7 +6,7 @@ export const app = document.getElementById('app');
 
 function add_text(text, classname) {
     const p = document.createElement('p');
-    p.innerText = text;
+    p.innerHTML = text;
     if (classname !== undefined) {
         p.className = classname;
     } else {
@@ -24,7 +24,17 @@ function add_art(art, classname) {
 
 }
 
-function next_line() {
+function block_previous_input() {
+    const input = document.querySelectorAll('input');
+    if (input.length > 0) {
+        input.forEach((element) => {
+            element.setAttribute('disabled', 'true');
+        });
+    }
+}
+
+export function next_line() {
+    block_previous_input();
     const p = document.createElement('p');
     const span_dots = document.createElement('span');
 
@@ -70,7 +80,6 @@ export async function get_input_command() {
         for (let key in commands) {
             if (value == key) {
                 add_text(commands[key], 'command');
-                remove_input();
                 next_line();
                 return;
             }
@@ -79,6 +88,11 @@ export async function get_input_command() {
             return;
         }
         if (value == '') {
+            next_line();
+            return;
+        }
+        if (value == 'clear') {
+            app.innerHTML = '';
             next_line();
             return;
         }
@@ -122,4 +136,4 @@ export async function load_terminal() {
 }
 
 
-export default { delay, app, get_input_command, load_terminal }
+export default { delay, app, get_input_command, load_terminal, next_line }
