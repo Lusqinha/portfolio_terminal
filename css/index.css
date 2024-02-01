@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background-color: black;
+    background-image: url(../web/twinkling-stars.gif);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95svh;
+    margin: 1em;
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.8rem;
+}
+main{
+    color: #9d3be1;
+    width: 100%;
+    height: 95%;
+    border-radius: 1rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.type{
+    display: flex;
+}
+
+.type input{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.6rem;
+    color: aliceblue;
+}
+.type input:focus{
+    outline: none;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+}
+
+#app p{
+    line-height: 2em;
+}
+
+#app .pre_line{
+    color: aliceblue;
+    
+}
+
+#app .dots{
+    color: #9d3be1;
+}
+
