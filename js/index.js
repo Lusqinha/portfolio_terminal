@@ -16,7 +16,7 @@ app.addEventListener("keydown", async function (e) {
     }
 })
 
-app.addEventListener("click", async function (e) {
+document.addEventListener("click", async function (e) {
     const input = document.querySelector('input');
     input.focus();
 })

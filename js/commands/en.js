@@ -4,6 +4,7 @@ const help = `
     <span class="highlight">whois</span> ------------- About me<br>
     <span class="highlight">whoami</span> ------------ About you<br>
     <span class="highlight">ping</span> -------------- (•-•)⌐<br>
+    <span class="highlight">banner</span> -------------- Load banner<br>
     <span class="highlight">projects</span> ---------- Main projects<br>
     <span class="highlight">skills</span> ------------ Main skills<br>
     <span class="highlight">social</span> ------------ Social networks<br>
@@ -26,4 +27,4 @@ export const comm_en = {
     "education": "coming soon",
 }
 
-export const error_en = "Command not found, type <span>help</span> for a list of commands";
+export const error_en = `Command not found, type <span class="highlight">help</span> for a list of commands`;
