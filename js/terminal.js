@@ -147,15 +147,7 @@ export async function get_input_command() {
     }
 }
 
-export async function load_terminal() {
-
-    app.innerHTML = '';
-    const lang = get_lang();
-
-    if (lang == null) {
-        window.localStorage.setItem('lang', 'en');
-    }
-
+async function load_first_screen(lang) {
     switch (lang) {
         case 'ptbr':
             add_art(ascii_cubes, 'ascii');
@@ -174,6 +166,18 @@ export async function load_terminal() {
             add_text('Run "<span class="highlight">help</span>" for a list of commands');
             break;
     }
+}
+
+export async function load_terminal() {
+
+    app.innerHTML = '';
+    const lang = get_lang();
+    await load_first_screen(lang);
+    if (lang == null) {
+        window.localStorage.setItem('lang', 'en');
+    }
+
+    
 
     await delay(500);
     next_line();
