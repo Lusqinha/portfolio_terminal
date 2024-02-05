@@ -3,6 +3,7 @@ import { comm, error } from './commands/langs.js';
 
 export const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 export const app = document.getElementById('app');
+export const history = [];
 
 
 // Funções para adição de texto e arte no terminal
@@ -62,9 +63,9 @@ function create_terminal_input_line(language) {
     p.setAttribute('class', 'pre_line');
 
     if (language == 'ptbr') {
-        p.innerHTML = 'convidado<span class="highlight">@</span>devlucasborges.com';
+        p.innerHTML = 'visitante<span class="highlight">@</span>devlucasborges.com';
     } else {
-        p.innerHTML = 'guest<span class="highlight">@</span>devlucasborges.com';
+        p.innerHTML = 'visitor<span class="highlight">@</span>devlucasborges.com';
     }
 
     span_dots.setAttribute('class', 'dots');
@@ -88,15 +89,29 @@ export function next_line() {
     input.focus();
 }
 
-export async function get_input_command() {
+function save_input_on_history(input_value) {
+    // from the most recent to the oldest
+    history.unshift(input_value);
+    console.log(history);
+}
+
+function get_recent_input() {
     const inputs = document.querySelectorAll('input');
     let value = '';
     for (let input of inputs) {
         if (!input.disabled) {
             value = input.value;
+            save_input_on_history(value);
             break;
         }
     }
+    return value;
+}
+
+export async function get_input_command() {
+
+    const value = get_recent_input();
+
     const commands = comm(get_lang());
 
     
@@ -147,7 +162,7 @@ export async function load_terminal() {
             await delay(400);
             add_text('Iniciando terminal...');
             await delay(800);
-            add_text('Digite "<span class="highlight">lang"</span> para mudar o idioma');
+            add_text('Digite "<span class="highlight">lang"</span> para mudar o idioma | <span class="highlight">pt-br</span> / en-us');
             add_text('Digite "<span class="highlight">help</span>" para ver a lista de comandos');
             break;
         case 'en':
@@ -155,7 +170,7 @@ export async function load_terminal() {
             await delay(400);
             add_text('Launching terminal...');
             await delay(800);
-            add_text('Run "<span class="highlight">lang"</span> to change the language');
+            add_text('Run "<span class="highlight">lang"</span> to change the language | pt-br / <span class="highlight">en-us</span>');
             add_text('Run "<span class="highlight">help</span>" for a list of commands');
             break;
     }

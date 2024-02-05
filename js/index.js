@@ -7,7 +7,7 @@ app.addEventListener("keypress", async function (e) {
     }
 })
 
-// ctrl + l to clear the terminal
+// ctrl + l para limpar o terminal
 app.addEventListener("keydown", async function (e) {
     if (e.ctrlKey && e.key === 'l') {
         e.preventDefault();
@@ -16,7 +16,7 @@ app.addEventListener("keydown", async function (e) {
     }
 })
 
-document.addEventListener("click", async function (e) {
+app.addEventListener("click", async function (e) {
     const input = document.querySelector('input');
     input.focus();
 })
