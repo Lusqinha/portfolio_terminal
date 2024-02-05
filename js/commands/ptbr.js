@@ -20,6 +20,15 @@ const whois = 'Meu nome é Lucas Borges, ou "Lusqinha" para a internet, fui capt
 
 const whoami = "Você é um visitante, para respostas mais complexas recomendo um psicólogo, não um desenvolvedor."
 
+const playlist = `
+<p>
+    A playlist está no Spotify, mas recomendo que utilize outro player como por exemplo o <span class="highlight"><a href="https://spotube.krtirtho.dev/" target="_blank"></a>Spotube</span>.<br>
+
+    <span class="highlight">Link</span> ----------------- <a href="https://open.spotify.com/playlist/3tSiLpa5XAPTN3BiGxt7E1 target="_blank"></a><br>
+
+</p>
+`
+
 const social = `
     <p> Você pode me encontrar nas redes:<br>
         <span class="highlight">GitHub</span> --------------  <a href="https://github.com/Lusqinha" target="_blank">github.com/Lusqinha</a><br>
@@ -57,7 +66,7 @@ export const comm_ptbr = {
     "whois": whois,
     "whoami": whoami,
     "ping": "• ¬(•-•) PONG!",
-    "playlist": "mais tarde vejo",
+    "playlist": playlist,
     "social": social,
     "projetos": projetos,
     "habilidades": habilidades,
