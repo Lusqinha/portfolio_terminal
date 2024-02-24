@@ -98,5 +98,34 @@ a:hover{
     body{
         font-size: 0.6rem;
     }
+    .type input{
+        font-size: 0.6rem;
+    }
 }
 
+@media screen and (max-width: 720px){
+    body{
+        font-size: 0.5rem;
+    }
+    .type input{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 0.4rem;
+    }
+    .type input{
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        font-size: 0.27rem;
+    }
+    .type input{
+        font-size: 0.27rem;
+    }
+}
