@@ -83,9 +83,20 @@ export function next_line() {
   input.focus();
 }
 
+function get_recent_input() {
+  const inputs = document.querySelectorAll('input');
+  let value = '';
+  for (let input of inputs) {
+    if (!input.disabled) {
+      value = input.value;
+      break;
+    }
+  }
+  return value;
+}
+
 export async function get_input_command() {
   const value = get_recent_input();
-
   const commands = comm(get_lang());
 
   find: {
