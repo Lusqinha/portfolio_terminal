@@ -16,7 +16,7 @@ const ajuda = `
 </p>
 `
 
-const whois = 'Meu nome é Lucas Borges, ou somente "Lusqinha" para a internet, fui pego pelo enorme <em>Rabbit Hole</em> que é <span class="highlight">GNU/Linux</span> e a cultura de software livre, onde acabei me interessando por programação e cibersegurança.<br><br>deixando um pouco a internet de lado, tenho uma paixão crescente por carros e em especial pelo meu querido <span class="highlight">Civic 2004</span>, o qual sou o orgulhoso dono de um exemplar (futuramente deixarei algumas fotos aqui), inclusive, venho desenvolvendo um computador de bordo baseado em OBD2; outra das minhas fixações é a música, para ser mais específico a banda <span class="highlight">Charlie Brown Jr.</span> ocupa boa parte das minhas playlists e fones durante o dia, achar um grupo onde todas músicas são ótimas é raro, porém dentro todas os álbuns, gostaria de recomendar apenas uma música para que possa te introduzir melhor aos clássicos da banda, peço que escute <span class="highlight"><a href="https://www.youtube.com/watch?v=DRhEueqE7Uw&pp=ygUQY2hhcmxpZSBicm93biBqcg%3D%3D" target="_blank">Lugar ao sol</a></span>, prometo que sua atenção não será em vão.'
+const whois = 'Meu nome é Lucas Borges, ou somente "Lusqinha" para a internet, fui pego pelo enorme <em>Rabbit Hole</em> que é <span class="highlight">GNU/Linux</span> e a cultura de software livre, onde acabei me interessando por programação e cibersegurança.<br><br>deixando um pouco a internet de lado, tenho uma paixão crescente por carros e em especial pelo meu querido <span class="highlight">Civic 2005</span>, o qual sou o orgulhoso dono de um exemplar (futuramente deixarei algumas fotos aqui), inclusive, venho desenvolvendo um computador de bordo baseado em OBD2; outra das minhas fixações é a música, para ser mais específico a banda <span class="highlight">Charlie Brown Jr.</span> ocupa boa parte das minhas playlists e fones durante o dia, achar um grupo onde todas músicas são ótimas é raro, porém dentro todas os álbuns, gostaria de recomendar apenas uma música para que possa te introduzir melhor aos clássicos da banda, peço que escute <span class="highlight"><a href="https://www.youtube.com/watch?v=DRhEueqE7Uw&pp=ygUQY2hhcmxpZSBicm93biBqcg%3D%3D" target="_blank">Lugar ao sol</a></span>, prometo que sua atenção não será em vão.'
 
 const whoami = "Você é um visitante, para respostas mais complexas recomendo um psicólogo, não um desenvolvedor."
 
@@ -24,7 +24,7 @@ const playlist = `
 <p>
     A playlist está no Spotify, mas recomendo que utilize outro player como por exemplo o <span class="highlight"><a href="https://spotube.krtirtho.dev/" target="_blank"></a>Spotube</span>.<br>
 
-    <span class="highlight">Link</span> ----------------- <a href="https://open.spotify.com/playlist/3tSiLpa5XAPTN3BiGxt7E1 target="_blank"></a><br>
+    <span class="highlight">Link</span> ----------------- <a href="https://open.spotify.com/playlist/3tSiLpa5XAPTN3BiGxt7E1 target="_blank">Meu Mix</a><br>
 
 </p>
 `
