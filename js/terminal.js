@@ -8,6 +8,8 @@
  * @requires comm
  * @requires error
  */
+import { ascii_cubes } from "./ascii.js";
+import { comm, error } from "./commands/langs.js";
 
 /**
  * Delays the execution for a specified amount of time.
