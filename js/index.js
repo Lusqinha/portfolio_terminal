@@ -39,5 +39,7 @@ app.addEventListener("keydown", async function (e) {
 
 })
 
-
+app.addEventListener("DOMNodeInserted", function (e) {
+    app.scrollTop = app.scrollHeight;
+})
 load_terminal();
