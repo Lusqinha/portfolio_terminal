@@ -29,7 +29,8 @@ const playlist = `
 
 const social = `
     <p> You can find me on: <br>
-        <span class = "highlight" > GitHub</span> --------------  <a href="https://github.com/Lusqinha" target="_blank">github.com/Lusqinha</a><br>
+        <span class="highlight"> GitHub</span> --------------  <a href="https://github.com/Lusqinha" target="_blank">github.com/Lusqinha</a><br>
+    	<span class="highlight"> Twitter/X</span> -----------  <a href="https://x.com/kernelape" target="_blank">KernelApe</a><br>
     </p>
 `
 
@@ -50,14 +51,13 @@ const skills = `
         |- <<span class="highlight">Javascript</span>> ---------|<br>
         |- <<span class="highlight">Python</span>> -------------|<br>
         |- <<span class="highlight">Linux</span>> --------------|<br>
-        |- <<span class="highlight">Java</span>> ---------------|<br>
-        |- <<span class="highlight">SQL</span>> ----------------|<br>
+        |- <<span class="highlight">Ruby</span>> ---------------|<br>
         |- <<span class="highlight">Go</span>> -----------------|<br>
         +------------------------+ <br>
     </p>
 `
 
-const career = "I currently work as a Solution Developer, Support Analyst and SysAdmin at Prática Certificação Digital."
+const career = "I am currently looking for new opportunities in the area of cybersecurity and Full-Stack development, I recently worked as a Solution Developer, Support Analyst and SysAdmin at Prática Certificação Digital."
 
 const education = 'I am studying Systems Analysis and Development at <span class="highlight">PUCRS</span> and taking some courses in the area of <span class="highlight">cybersecurity</span> in parallel.'
 

@@ -46,15 +46,26 @@ let temp_history = [];
  * @param {string} text - The text to be added.
  * @param {string} [classname] - The CSS class name to be applied to the text element.
  */
-function add_text(text, classname) {
+async function add_text(text, classname) {
   const p = document.createElement("p");
-  p.innerHTML = text;
   if (classname !== undefined) {
     p.className = classname;
   } else {
     p.className = "terminal_text";
   }
-  app.appendChild(p);
+
+  var typed = new Typed(p, {
+    strings: [text],
+    typeSpeed: 10,
+    backSpeed: 0,
+    loop: false,
+    showCursor: true
+  })
+
+  app.appendChild(p); 
+
+  // only end the typing animation when the text is fully typed
+  await delay(text.length * 10);
 }
 
 /**
@@ -224,7 +235,7 @@ export async function get_input_command() {
   find: {
     for (let key in commands) {
       if (value == key) {
-        add_text(commands[key], "command");
+        await add_text(commands[key], "command");
         next_line();
         return;
       }
@@ -252,7 +263,7 @@ export async function get_input_command() {
       window.location.href = "https://devlucasborges.com";
       return;
     }
-    add_text(error(get_lang()), "error");
+    await add_text(error(get_lang()), "error");
     next_line();
   }
 }
@@ -265,27 +276,21 @@ export async function get_input_command() {
 async function load_first_screen(lang) {
   switch (lang) {
     case "ptbr":
-      add_art(ascii_cubes, "ascii");
-      await delay(400);
-      add_text("Iniciando terminal...");
-      await delay(800);
-      add_text(
-        'Digite "<span class="highlight">lang"</span> para mudar o idioma | <span class="highlight">pt-br</span> / en-us'
-      );
-      add_text(
-        'Digite "<span class="highlight">help</span>" para ver a lista de comandos'
+      await add_art(ascii_cubes, "ascii");
+      await delay(500);
+      await add_text("Iniciando terminal...");
+      await delay(1500);
+      await add_text(
+        'Digite "<span class="highlight">lang"</span> para mudar o idioma | <span class="highlight">pt-br</span> / en-us<br><br>Digite "<span class="highlight">help</span>" para ver a lista de comandos'
       );
       break;
     case "en":
       add_art(ascii_cubes, "ascii");
       await delay(400);
-      add_text("Launching terminal...");
+      await add_text("Launching terminal...");
       await delay(800);
-      add_text(
-        'Run "<span class="highlight">lang"</span> to change the language | pt-br / <span class="highlight">en-us</span>'
-      );
-      add_text(
-        'Run "<span class="highlight">help</span>" for a list of commands'
+      await add_text(
+        'Run "<span class="highlight">lang"</span> to change the language | pt-br / <span class="highlight">en-us</span><br><br>Run "<span class="highlight">help</span>" for a list of commands'
       );
       break;
   }

@@ -10,7 +10,7 @@ const ajuda = `
     <span class="highlight">projetos</span> ---------- Principais projetos<br>
     <span class="highlight">habilidades</span> ------- Principais habilidades<br>
     <span class="highlight">carreira</span> ---------- Experiência profissional<br>
-    <span class="highlight">estudo</span> ---------- Formação acadêmica<br>
+    <span class="highlight">estudo</span> ------------ Formação acadêmica<br>
     <span class="highlight">clear</span> ------------- Limpa o terminal
     <br>
 </p>
@@ -32,6 +32,7 @@ const playlist = `
 const social = `
     <p> Você pode me encontrar nas redes:<br>
         <span class="highlight">GitHub</span> --------------  <a href="https://github.com/Lusqinha" target="_blank">github.com/Lusqinha</a><br>
+	<span class="highlight">Twitter/X</span> -----------  <a href="https://x.com/kernelape" target="_blank">KernelApe</a><br>
     </p>
 `
 
@@ -51,13 +52,12 @@ const habilidades = `
         |- <<span class="highlight">Javascript</span>> ----------|<br>
         |- <<span class="highlight">Python</span>> --------------|<br>
         |- <<span class="highlight">Linux</span>> ---------------|<br>
-        |- <<span class="highlight">Java</span>> ----------------|<br>
-        |- <<span class="highlight">SQL</span>> -----------------|<br>
+        |- <<span class="highlight">Ruby</span>> ----------------|<br>
         |- <<span class="highlight">Go</span>> ------------------|<br>
         +-------------------------+ <br>
     </p>
 `
-const carreira = "Atualmente atuo como Solution Developer, Analista de Suporte e SysAdmin na Prática Certificação Digital."
+const carreira = "Atualmente estou em busca de novas oportunidades na área de cibersegurança e desenvolvimento Full-Stack, recentemente atuei como Solution Developer, Analista de Suporte e SysAdmin na Prática Certificação Digital."
 
 const estudo = 'Estou cursando Análise e Desenvolvimento de Sistemas na <span class="highlight">PUCRS</span> e fazendo alguns cursos na área de <span class="highlight">cibersegurança</span> paralelamente.'
 
