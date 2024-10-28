@@ -41,9 +41,7 @@ const projetos = `
         <<span class="highlight">Portfolio Principal</span>> ------------------ <a href="https://github.com/Lusqinha/portfolio-backend" target="_blank">Lusqinha/portfolio-backend</a><br>
         <<span class="highlight">Portfolio Terminal</span>> ------------------- <a href="https://github.com/Lusqinha/portfolio_terminal" target="_blank">Lusqinha/portfolio_terminal</a><br>
         <<span class="highlight">PecManager</span>> --------------------------- <a href="https://github.com/Lusqinha/PecManager" target="_blank">Lusqinha/PecManager</a><br>
-        <<span class="highlight">FootballCareerSimulator</span>> -------------- <a href="https://github.com/Lusqinha/FootballCareerSimulator" target="_blank">Lusqinha/FootballCareerSimulator</a><br>
-        <<span class="highlight">Cloud privada</span>> ------------------------ Projeto empresarial<br>
-        <<span class="highlight">Agenda de atendimentos</span>> --------------- Empresarial//código aberto em breve<br>
+        <<span class="highlight">Agenda de atendimentos</span>> --------------- Privado//código aberto em breve<br>
     </p>
 `
 const habilidades = `
@@ -52,14 +50,15 @@ const habilidades = `
         |- <<span class="highlight">Javascript</span>> ----------|<br>
         |- <<span class="highlight">Python</span>> --------------|<br>
         |- <<span class="highlight">Linux</span>> ---------------|<br>
+        |- <<span class="highlight">Java</span>> ----------------|<br>
         |- <<span class="highlight">Ruby</span>> ----------------|<br>
         |- <<span class="highlight">Go</span>> ------------------|<br>
         +-------------------------+ <br>
     </p>
 `
-const carreira = "Atualmente estou em busca de novas oportunidades na área de cibersegurança e desenvolvimento Full-Stack, recentemente atuei como Solution Developer, Analista de Suporte e SysAdmin na Prática Certificação Digital."
+const carreira = "Atualmente estou em busca de uma oportunidade de estágio na área de desenvolvimento Fullstack e Backend. Recentemente atuei como Help Desk, Analista de Suporte e SysAdmin na Prática Certificação Digital, durante todo meu tempo como colaborador adquiri uma grande experiência na área de suporte e gerenciamento de sistemas."
 
-const estudo = 'Estou cursando Análise e Desenvolvimento de Sistemas na <span class="highlight">PUCRS</span> e fazendo alguns cursos na área de <span class="highlight">cibersegurança</span> paralelamente.'
+const estudo = 'Estou cursando Análise e Desenvolvimento de Sistemas na <span class="highlight">PUCRS</span> e realizando projetos como freelancer <span class="highlight">Fullstack</span> paralelamente.'
 
 export const comm_ptbr = {
     "help": ajuda,

@@ -38,10 +38,7 @@ const projects = `
     <p>
         <<span class="highlight">Main Portfolio</span>> ----------------------- <a href="https://github.com/Lusqinha/portfolio-backend" target="_blank">Lusqinha/portfolio-backend</a><br>
         <<span class="highlight">Terminal Portfolio</span>> ------------------- <a href="https://github.com/Lusqinha/portfolio_terminal" target="_blank">Lusqinha/portfolio_terminal</a><br>
-        <<span class="highlight">PecManager</span>> --------------------------- <a href="https://github.com/Lusqinha/PecManager" target="_blank">Lusqinha/PecManager</a><br>
-        <<span class="highlight">FootballCareerSimulator</span>> -------------- <a href="https://github.com/Lusqinha/FootballCareerSimulator" target="_blank">Lusqinha/FootballCareerSimulator</a><br>
-        <<span class="highlight">Private cloud</span>> ------------------------ Business project<br>
-        <<span class="highlight">Service schedule</span>> --------------------- Enterprise//open source coming soon<br>
+        <<span class="highlight">Service schedule</span>> --------------------- Private//open source soon<br>
     </p>
 `
 
@@ -51,15 +48,16 @@ const skills = `
         |- <<span class="highlight">Javascript</span>> ---------|<br>
         |- <<span class="highlight">Python</span>> -------------|<br>
         |- <<span class="highlight">Linux</span>> --------------|<br>
+        |- <<span class="highlight">Java</span>> ---------------|<br>
         |- <<span class="highlight">Ruby</span>> ---------------|<br>
         |- <<span class="highlight">Go</span>> -----------------|<br>
         +------------------------+ <br>
     </p>
 `
 
-const career = "I am currently looking for new opportunities in the area of cybersecurity and Full-Stack development, I recently worked as a Solution Developer, Support Analyst and SysAdmin at Prática Certificação Digital."
+const career = "I am currently looking for an internship opportunity in the Fullstack and Backend development area. Recently I worked as a Help Desk, Support Analyst and SysAdmin at Prática Certificação Digital, during all my time as a collaborator I acquired a great experience in the area of support and systems management."
 
-const education = 'I am studying Systems Analysis and Development at <span class="highlight">PUCRS</span> and taking some courses in the area of <span class="highlight">cybersecurity</span> in parallel.'
+const education = 'I am studying Systems Analysis and Development at <span class="highlight">PUCRS</span> while i on projects as a freelancer <span class="highlight">Fullstack</span>.'
 
 
 export const comm_en = {
