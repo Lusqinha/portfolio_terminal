@@ -53,19 +53,18 @@ async function add_text(text, classname) {
   } else {
     p.className = "terminal_text";
   }
-
-  var typed = new Typed(p, {
+  const typed = new Typed(p, {
     strings: [text],
-    typeSpeed: 10,
+    typeSpeed: 0.5,
     backSpeed: 0,
     loop: false,
-    showCursor: true
-  })
+    showCursor: true,
+    onComplete: () => resolve(),
+  });
 
-  app.appendChild(p); 
+  app.appendChild(p);
 
-  // only end the typing animation when the text is fully typed
-  await delay(text.length * 10);
+  await new Promise(resolve => typed.options.onComplete = resolve);
 }
 
 /**
