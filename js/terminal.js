@@ -8,6 +8,7 @@
  * @requires comm
  * @requires error
  */
+
 import { ascii_cubes } from "./ascii.js";
 import { comm, error } from "./commands/langs.js";
 
@@ -41,6 +42,14 @@ const history = [''];
 let temp_history = [];
 
 /**
+ * The typing speed for the terminal text.
+ * 
+ * @type {number} 
+ */
+
+const type_speed = 0.1;
+
+/**
  * Adds text to the terminal output.
  * 
  * @param {string} text - The text to be added.
@@ -55,7 +64,7 @@ async function add_text(text, classname) {
   }
   const typed = new Typed(p, {
     strings: [text],
-    typeSpeed: 0.5,
+    typeSpeed: type_speed,
     backSpeed: 0,
     loop: false,
     showCursor: true,
@@ -227,7 +236,9 @@ export function get_recent_input() {
  * Processes the user input command and performs the corresponding action.
  */
 export async function get_input_command() {
-  const value = get_recent_input().value;
+  const recent_input = get_recent_input()
+  const value = recent_input.value;
+  recent_input.setAttribute("disabled", "true");
   add_to_history(value);
   const commands = comm(get_lang());
 
