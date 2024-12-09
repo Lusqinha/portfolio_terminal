@@ -36,7 +36,7 @@ const social = `
 
 const projects = `
     <p>
-        <<span class="highlight">RandAvatars</span>> ------------------ <a href="https://github.com/Lusqinha/RandAvatars-telegram-bot" target="_blank">Lusqinha/RandAvatars</a><br>
+        <<span class="highlight">RandAvatars</span>> -------------------------- <a href="https://github.com/Lusqinha/RandAvatars-telegram-bot" target="_blank">Lusqinha/RandAvatars</a><br>
         <<span class="highlight">Portfolio Terminal</span>> ------------------- <a href="https://github.com/Lusqinha/portfolio_terminal" target="_blank">Lusqinha/portfolio_terminal</a><br>
         <<span class="highlight">PecManager</span>> --------------------------- <a href="https://github.com/Lusqinha/PecManager-web" target="_blank">Lusqinha/PecManager-web</a><br>
         <<span class="highlight">Service schedule</span>> --------------------- Private//open source soon<br>
