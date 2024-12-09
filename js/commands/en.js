@@ -36,22 +36,23 @@ const social = `
 
 const projects = `
     <p>
-        <<span class="highlight">Main Portfolio</span>> ----------------------- <a href="https://github.com/Lusqinha/portfolio-backend" target="_blank">Lusqinha/portfolio-backend</a><br>
-        <<span class="highlight">Terminal Portfolio</span>> ------------------- <a href="https://github.com/Lusqinha/portfolio_terminal" target="_blank">Lusqinha/portfolio_terminal</a><br>
+        <<span class="highlight">RandAvatars</span>> ------------------ <a href="https://github.com/Lusqinha/RandAvatars-telegram-bot" target="_blank">Lusqinha/RandAvatars</a><br>
+        <<span class="highlight">Portfolio Terminal</span>> ------------------- <a href="https://github.com/Lusqinha/portfolio_terminal" target="_blank">Lusqinha/portfolio_terminal</a><br>
+        <<span class="highlight">PecManager</span>> --------------------------- <a href="https://github.com/Lusqinha/PecManager-web" target="_blank">Lusqinha/PecManager-web</a><br>
         <<span class="highlight">Service schedule</span>> --------------------- Private//open source soon<br>
     </p>
 `
 
 const skills = `
     <p>
-        +------ <<<span class="highlight">Skills</span>>> ------+<br>
-        |- <<span class="highlight">Javascript</span>> ---------|<br>
-        |- <<span class="highlight">Python</span>> -------------|<br>
-        |- <<span class="highlight">Linux</span>> --------------|<br>
-        |- <<span class="highlight">Java</span>> ---------------|<br>
-        |- <<span class="highlight">Ruby</span>> ---------------|<br>
-        |- <<span class="highlight">Go</span>> -----------------|<br>
-        +------------------------+ <br>
+        +---- <<<span class="highlight">Habilidades</span>>> ----+<br>
+        |- <<span class="highlight">Typescript</span>> ----------|<br>
+        |- <<span class="highlight">Python</span>> --------------|<br>
+        |- <<span class="highlight">NodeJs</span>> --------------|<br>
+        |- <<span class="highlight">Java</span>> ----------------|<br>
+        |- <<span class="highlight">Ruby</span>> ----------------|<br>
+        |- <<span class="highlight">Go</span>> ------------------|<br>
+        +-------------------------+ <br>
     </p>
 `
 
